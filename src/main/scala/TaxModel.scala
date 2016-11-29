@@ -56,5 +56,5 @@ object TaxOptions {
 case class TaxSummary(estimatedTaxes: Float, netIncome: Float) {
   def effectiveRate = s"${(estimatedTaxes / netIncome) * 100}%"
 
-  override def toString = s"Tax Estimate: $estimatedTaxes\nEffective Rate: ${effectiveRate}"
+  override def toString = s"Tax Estimate: $estimatedTaxes\nEffective Rate: $effectiveRate"
 }
